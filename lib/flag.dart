@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class FlagCard extends StatelessWidget {
+class Flag extends StatelessWidget {
   final String country;
   final String imagePath;
 
-  const FlagCard({
+  const Flag({
     super.key,
     required this.country,
     required this.imagePath,
@@ -13,7 +13,8 @@ class FlagCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 10,
+      elevation: 8,
+      color: Colors.white,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       clipBehavior: Clip.antiAlias,
       child: Padding(
@@ -32,6 +33,7 @@ class FlagCard extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 26,
                 fontWeight: FontWeight.bold,
+                color: Color(0xFF232526),
               ),
             ),
           ],
